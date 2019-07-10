@@ -19,7 +19,6 @@ package connection
 
 import (
 	"encoding/json"
-
 	"github.com/pkg/errors"
 
 	"github.com/elastic/beats/libbeat/common"
@@ -31,6 +30,7 @@ import (
 var (
 	schema = s.Schema{
 		"name":        c.Str("name"),
+		"client_provided_name": c.Str("client_properties.connection_name"),
 		"vhost":       c.Str("vhost", s.Required),
 		"user":        c.Str("user", s.Required),
 		"node":        c.Str("node", s.Required),
