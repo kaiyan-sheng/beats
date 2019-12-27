@@ -1,0 +1,6 @@
+- name: vpc
+  type: group
+  description: >
+    `vpc` contains the metrics that were scraped from AWS CloudWatch which contains monitoring metrics sent by AWS VPC.
+  release: beta
+  fields:
