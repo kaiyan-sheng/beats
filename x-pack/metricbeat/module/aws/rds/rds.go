@@ -51,6 +51,7 @@ type DBDetails struct {
 	dbIdentifier       string
 	dbStatus           string
 	tags               []aws.Tag
+	allocatedStorage   int64
 }
 
 // New creates a new instance of the MetricSet. New is responsible for unpacking
@@ -168,6 +169,7 @@ func (m *MetricSet) getDBInstancesPerRegion(svc rdsiface.ClientAPI) ([]string, m
 			dbInstanceIDs = append(dbInstanceIDs, *dbInstance.DBInstanceIdentifier)
 		}
 
+		fmt.Println("dbInstance AllocatedStorage = ", *dbInstance.AllocatedStorage)
 		if dbInstance.DBInstanceArn != nil {
 			dbDetails.dbArn = *dbInstance.DBInstanceArn
 		}
@@ -182,6 +184,10 @@ func (m *MetricSet) getDBInstancesPerRegion(svc rdsiface.ClientAPI) ([]string, m
 
 		if dbInstance.AvailabilityZone != nil {
 			dbDetails.dbAvailabilityZone = *dbInstance.AvailabilityZone
+		}
+
+		if dbInstance.AllocatedStorage != nil {
+			dbDetails.allocatedStorage = *dbInstance.AllocatedStorage * 1000000000
 		}
 
 		// Get tags for each RDS instance
@@ -314,6 +320,7 @@ func (m *MetricSet) createCloudWatchEvents(getMetricDataResults []cloudwatch.Met
 								events[dbIdentifier].MetricSetFields.Put("db_instance.class", dbInstanceMap[dbIdentifier].dbClass)
 								events[dbIdentifier].MetricSetFields.Put("db_instance.identifier", dbInstanceMap[dbIdentifier].dbIdentifier)
 								events[dbIdentifier].MetricSetFields.Put("db_instance.status", dbInstanceMap[dbIdentifier].dbStatus)
+								events[dbIdentifier].MetricSetFields.Put("db_instance.allocated_storage.bytes", dbInstanceMap[dbIdentifier].allocatedStorage)
 
 								for _, tag := range dbInstanceMap[dbIdentifier].tags {
 									events[dbIdentifier].ModuleFields.Put("tags."+tag.Key, tag.Value)

@@ -37,6 +37,10 @@
       type: keyword
       description: >
         Specifies the current state of this database.
+    - name: db_instance.allocated_storage.bytes
+      type: long
+      description: >
+        The amount of storage (in bytes) to be initially allocated for the database instance.
     - name: disk_queue_depth
       type: float
       description: >
