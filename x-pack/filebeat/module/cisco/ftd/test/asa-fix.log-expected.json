@@ -42,6 +42,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "SNL-ASA-VPN-A01",
             "SNL-ASA-VPN-A01"
         ],
         "related.ip": [
@@ -95,6 +96,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "SNL-ASA-VPN-A01",
             "SNL-ASA-VPN-A01"
         ],
         "related.ip": [
@@ -198,6 +200,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "SNL-ASA-VPN-A01",
             "SNL-ASA-VPN-A01"
         ],
         "related.ip": [
@@ -244,6 +247,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "SNL-ASA-VPN-A01",
             "SNL-ASA-VPN-A01"
         ],
         "related.ip": [

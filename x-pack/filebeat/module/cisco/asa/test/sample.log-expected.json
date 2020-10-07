@@ -190,6 +190,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "INT-FW01",
             "INT-FW01"
         ],
         "related.ip": [
@@ -245,6 +246,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "INT-FW01",
             "INT-FW01"
         ],
         "related.ip": [
@@ -707,6 +709,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "FJSG2NRFW01",
             "FJSG2NRFW01"
         ],
         "related.ip": [
@@ -2788,6 +2791,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -2836,6 +2840,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -2884,6 +2889,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -2932,6 +2938,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -2980,6 +2987,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -3028,6 +3036,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -3076,6 +3085,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -3124,6 +3134,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -3178,6 +3189,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [
@@ -3229,6 +3241,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "GIFRCHN01",
             "GIFRCHN01"
         ],
         "related.ip": [

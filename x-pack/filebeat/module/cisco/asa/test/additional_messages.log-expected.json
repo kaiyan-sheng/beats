@@ -41,6 +41,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -99,6 +100,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -147,6 +149,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -194,6 +197,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -236,6 +240,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -281,6 +286,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -336,6 +342,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -392,6 +399,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -440,6 +448,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -491,6 +500,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -532,6 +542,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -570,6 +581,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -611,6 +623,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -655,6 +668,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -700,6 +714,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -745,6 +760,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -792,6 +808,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -848,6 +865,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -905,6 +923,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -960,6 +979,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1010,6 +1030,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1059,6 +1080,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1110,6 +1132,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1136,6 +1159,7 @@
         "destination.geo.city_name": "Thousand Oaks",
         "destination.geo.continent_name": "North America",
         "destination.geo.country_iso_code": "US",
+        "destination.geo.country_name": "United States",
         "destination.geo.location.lat": 34.197,
         "destination.geo.location.lon": -118.8199,
         "destination.geo.region_iso_code": "US-CA",
@@ -1175,6 +1199,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1232,6 +1257,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1290,6 +1316,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1344,6 +1371,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1393,6 +1421,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1443,6 +1472,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1491,6 +1521,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1539,6 +1570,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1587,6 +1619,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1628,6 +1661,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1662,6 +1696,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1698,6 +1733,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1734,6 +1770,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1780,6 +1817,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1833,6 +1871,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1874,6 +1913,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1908,6 +1948,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -1949,6 +1990,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -1990,6 +2032,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -2024,6 +2067,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -2069,6 +2113,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2116,6 +2161,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -2161,6 +2207,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2211,6 +2258,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2256,6 +2304,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2301,6 +2350,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2346,6 +2396,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2391,6 +2442,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2417,6 +2469,7 @@
         "destination.geo.city_name": "Clermont-Ferrand",
         "destination.geo.continent_name": "Europe",
         "destination.geo.country_iso_code": "FR",
+        "destination.geo.country_name": "France",
         "destination.geo.location.lat": 45.7838,
         "destination.geo.location.lon": 3.0966,
         "destination.geo.region_iso_code": "FR-63",
@@ -2456,6 +2509,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2467,6 +2521,7 @@
         "source.geo.city_name": "Moscow",
         "source.geo.continent_name": "Europe",
         "source.geo.country_iso_code": "RU",
+        "source.geo.country_name": "Russia",
         "source.geo.location.lat": 55.7527,
         "source.geo.location.lon": 37.6172,
         "source.geo.region_iso_code": "RU-MOW",
@@ -2516,6 +2571,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2542,6 +2598,7 @@
         "destination.geo.city_name": "Riga",
         "destination.geo.continent_name": "Europe",
         "destination.geo.country_iso_code": "LV",
+        "destination.geo.country_name": "Latvia",
         "destination.geo.location.lat": 56.9496,
         "destination.geo.location.lon": 24.0978,
         "destination.geo.region_iso_code": "LV-RIX",
@@ -2578,6 +2635,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01",
             "somedomainname.local"
         ],
@@ -2621,6 +2679,7 @@
         "observer.vendor": "Cisco",
         "related.hosts": [
             "dev01",
+            "dev01",
             "console"
         ],
         "service.type": "cisco",
@@ -2659,6 +2718,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2701,6 +2761,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "service.type": "cisco",
@@ -2742,6 +2803,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2786,6 +2848,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2832,6 +2895,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2876,6 +2940,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2915,6 +2980,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -2927,6 +2993,7 @@
         "source.geo.city_name": "London",
         "source.geo.continent_name": "Europe",
         "source.geo.country_iso_code": "GB",
+        "source.geo.country_name": "United Kingdom",
         "source.geo.location.lat": 51.5888,
         "source.geo.location.lon": -0.0247,
         "source.geo.region_iso_code": "GB-ENG",
@@ -2946,6 +3013,7 @@
         "destination.geo.city_name": "London",
         "destination.geo.continent_name": "Europe",
         "destination.geo.country_iso_code": "GB",
+        "destination.geo.country_name": "United Kingdom",
         "destination.geo.location.lat": 51.5888,
         "destination.geo.location.lon": -0.0247,
         "destination.geo.region_iso_code": "GB-ENG",
@@ -2978,6 +3046,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -3018,6 +3087,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -3029,6 +3099,7 @@
         "source.as.organization.name": "Google LLC",
         "source.geo.continent_name": "North America",
         "source.geo.country_iso_code": "US",
+        "source.geo.country_name": "United States",
         "source.geo.location.lat": 37.751,
         "source.geo.location.lon": -97.822,
         "source.ip": "8.8.8.8",
@@ -3064,6 +3135,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -3075,6 +3147,7 @@
         "source.as.organization.name": "Google LLC",
         "source.geo.continent_name": "North America",
         "source.geo.country_iso_code": "US",
+        "source.geo.country_name": "United States",
         "source.geo.location.lat": 37.751,
         "source.geo.location.lon": -97.822,
         "source.ip": "8.8.8.8",
@@ -3093,6 +3166,7 @@
         "destination.geo.city_name": "Stoke Newington",
         "destination.geo.continent_name": "Europe",
         "destination.geo.country_iso_code": "GB",
+        "destination.geo.country_name": "United Kingdom",
         "destination.geo.location.lat": 51.5638,
         "destination.geo.location.lon": -0.0765,
         "destination.geo.region_iso_code": "GB-HCK",
@@ -3126,6 +3200,7 @@
         "observer.type": "firewall",
         "observer.vendor": "Cisco",
         "related.hosts": [
+            "dev01",
             "dev01"
         ],
         "related.ip": [
@@ -3139,6 +3214,7 @@
         "source.geo.city_name": "Dublin",
         "source.geo.continent_name": "Europe",
         "source.geo.country_iso_code": "IE",
+        "source.geo.country_name": "Ireland",
         "source.geo.location.lat": 53.3338,
         "source.geo.location.lon": -6.2488,
         "source.geo.region_iso_code": "IE-L",

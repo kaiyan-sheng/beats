@@ -916,6 +916,7 @@
         "observer.vendor": "Apache",
         "related.hosts": [
             "https://internal.example.net/mdolore/rQuisau.gif?iavolu=den#tutla",
+            "internal.example.net",
             "internal.example.net"
         ],
         "related.ip": [
@@ -2661,6 +2662,7 @@
         "observer.vendor": "Apache",
         "related.hosts": [
             "https://www.example.org/umetMal/asper.htm?metcons=itasper#uae",
+            "www.example.org",
             "www.example.org"
         ],
         "related.ip": [
@@ -3986,6 +3988,7 @@
         "observer.vendor": "Apache",
         "related.hosts": [
             "https://www5.example.com/quu/xeac.htm?abor=oreverit#scip",
+            "www5.example.com",
             "www5.example.com"
         ],
         "related.ip": [
@@ -4943,6 +4946,7 @@
         "observer.vendor": "Apache",
         "related.hosts": [
             "https://mail.example.com/rvelil/adese.htm?incidi=aedictas#rumetMa",
+            "mail.example.com",
             "mail.example.com"
         ],
         "related.ip": [
@@ -5429,6 +5433,7 @@
         "observer.vendor": "Apache",
         "related.hosts": [
             "https://internal.example.net/llitani/uscipit.html?etcons=etco#iuntN",
+            "internal.example.net",
             "internal.example.net"
         ],
         "related.ip": [
