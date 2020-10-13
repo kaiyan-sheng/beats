@@ -278,7 +278,12 @@ func (p *s3Input) processorKeepAlive(svcSQS sqsiface.ClientAPI, message sqs.Mess
 			return
 		case err := <-errC:
 			if err != nil {
-				p.logger.Warn("Processing message failed, updating visibility timeout")
+				if err == context.DeadlineExceeded {
+					p.logger.Info("Context deadline exceeded, updating visibility timeout")
+				} else {
+					p.logger.Warnf("Processing message failed '%w', updating visibility timeout", err)
+				}
+
 				err := p.changeVisibilityTimeout(queueURL, visibilityTimeout, svcSQS, message.ReceiptHandle)
 				if err != nil {
 					p.logger.Error(errors.Wrap(err, "SQS ChangeMessageVisibilityRequest failed"))
@@ -412,8 +417,7 @@ func (p *s3Input) handleS3Objects(svc s3iface.ClientAPI, s3Infos []s3Info, errC 
 		p.logger.Debugf("Processing file from s3 bucket \"%s\" with name \"%s\"", info.name, info.key)
 		err := p.createEventsFromS3Info(svc, info, s3Ctx)
 		if err != nil {
-			err = errors.Wrapf(err, "createEventsFromS3Info failed processing file from s3 bucket \"%s\" with name \"%s\"", info.name, info.key)
-			p.logger.Error(err)
+			p.logger.Error(errors.Wrapf(err, "createEventsFromS3Info failed processing file from s3 bucket \"%s\" with name \"%s\"", info.name, info.key))
 			s3Ctx.setError(err)
 		}
 	}
@@ -440,8 +444,7 @@ func (p *s3Input) createEventsFromS3Info(svc s3iface.ClientAPI, info s3Info, s3C
 			// If the SDK can determine the request or retry delay was canceled
 			// by a context the ErrCodeRequestCanceled error will be returned.
 			if awsErr.Code() == awssdk.ErrCodeRequestCanceled {
-				err = errors.Wrapf(err, "S3 GetObjectRequest canceled for '%s' from S3 bucket '%s'", info.key, info.name)
-				p.logger.Error(err)
+				p.logger.Error(errors.Wrapf(err, "S3 GetObjectRequest canceled for '%s' from S3 bucket '%s'", info.key, info.name))
 				return err
 			}
 
@@ -459,16 +462,14 @@ func (p *s3Input) createEventsFromS3Info(svc s3iface.ClientAPI, info s3Info, s3C
 
 	isS3ObjGzipped, err := isStreamGzipped(reader)
 	if err != nil {
-		err = errors.Wrap(err, "could not determine if S3 object is gzipped")
-		p.logger.Error(err)
+		p.logger.Error(errors.Wrap(err, "could not determine if S3 object is gzipped"))
 		return err
 	}
 
 	if isS3ObjGzipped {
 		gzipReader, err := gzip.NewReader(reader)
 		if err != nil {
-			err = errors.Wrapf(err, "gzip.NewReader failed for '%s' from S3 bucket '%s'", info.key, info.name)
-			p.logger.Error(err)
+			p.logger.Error(errors.Wrapf(err, "gzip.NewReader failed for '%s' from S3 bucket '%s'", info.key, info.name))
 			return err
 		}
 		reader = bufio.NewReader(gzipReader)
@@ -480,8 +481,7 @@ func (p *s3Input) createEventsFromS3Info(svc s3iface.ClientAPI, info s3Info, s3C
 		decoder := json.NewDecoder(reader)
 		err := p.decodeJSON(decoder, objectHash, info, s3Ctx)
 		if err != nil {
-			err = errors.Wrapf(err, "decodeJSONWithKey failed for '%s' from S3 bucket '%s'", info.key, info.name)
-			p.logger.Error(err)
+			p.logger.Error(errors.Wrapf(err, "decodeJSONWithKey failed for '%s' from S3 bucket '%s'", info.key, info.name))
 			return err
 		}
 		return nil
@@ -497,8 +497,7 @@ func (p *s3Input) createEventsFromS3Info(svc s3iface.ClientAPI, info s3Info, s3C
 			event := createEvent(log, offset, info, objectHash, s3Ctx)
 			err = p.forwardEvent(event)
 			if err != nil {
-				err = errors.Wrap(err, "forwardEvent failed")
-				p.logger.Error(err)
+				p.logger.Error(errors.Wrap(err, "forwardEvent failed"))
 				return err
 			}
 			return nil
@@ -517,8 +516,7 @@ func (p *s3Input) createEventsFromS3Info(svc s3iface.ClientAPI, info s3Info, s3C
 		event := createEvent(log, offset, info, objectHash, s3Ctx)
 		err = p.forwardEvent(event)
 		if err != nil {
-			err = errors.Wrap(err, "forwardEvent failed")
-			p.logger.Error(err)
+			p.logger.Error(errors.Wrap(err, "forwardEvent failed"))
 			return err
 		}
 	}
