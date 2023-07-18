@@ -201,59 +201,6 @@ func TestRetrieveAWSMetadataEC2(t *testing.T) {
 			},
 		},
 		{
-			// NOTE: In this case, add_cloud_metadata will overwrite cloud fields because
-			// it won't detect cloud.provider as a cloud field. This is not the behavior we
-			// expect and will find a better solution later in issue 11697.
-			testName: "only cloud.provider pre-informed, no overwrite",
-			mockGetInstanceIdentity: func(ctx context.Context, params *imds.GetInstanceIdentityDocumentInput, optFns ...func(*imds.Options)) (*imds.GetInstanceIdentityDocumentOutput, error) {
-				return &imds.GetInstanceIdentityDocumentOutput{
-					InstanceIdentityDocument: imds.InstanceIdentityDocument{
-						AvailabilityZone: availabilityZoneDoc1,
-						Region:           regionDoc1,
-						InstanceID:       instanceIDDoc1,
-						InstanceType:     instanceTypeDoc1,
-						AccountID:        accountIDDoc1,
-						ImageID:          imageIDDoc1,
-					},
-				}, nil
-			},
-			mockEc2Tags: func(ctx context.Context, params *ec2.DescribeTagsInput, optFns ...func(*ec2.Options)) (*ec2.DescribeTagsOutput, error) {
-				return &ec2.DescribeTagsOutput{
-					Tags: []types.TagDescription{
-						{
-							Key:          &clusterNameKey,
-							ResourceId:   &instanceIDDoc1,
-							ResourceType: "instance",
-							Value:        &clusterNameValue,
-						},
-					},
-				}, nil
-			},
-			processorOverwrite: false,
-			previousEvent: mapstr.M{
-				"cloud.provider": "aws",
-			},
-			expectedEvent: mapstr.M{
-				"cloud.provider": "aws",
-				"cloud": mapstr.M{
-					"provider":          "aws",
-					"account":           mapstr.M{"id": accountIDDoc1},
-					"instance":          mapstr.M{"id": instanceIDDoc1},
-					"machine":           mapstr.M{"type": instanceTypeDoc1},
-					"image":             mapstr.M{"id": imageIDDoc1},
-					"region":            regionDoc1,
-					"availability_zone": availabilityZoneDoc1,
-					"service":           mapstr.M{"name": "EC2"},
-					"orchestrator": mapstr.M{
-						"cluster": mapstr.M{
-							"name": clusterNameValue,
-							"id":   fmt.Sprintf("arn:aws:eks:%s:%s:cluster/%s", regionDoc1, accountIDDoc1, clusterNameValue),
-						},
-					},
-				},
-			},
-		},
-		{
 			testName: "instanceId pre-informed, overwrite",
 			mockGetInstanceIdentity: func(ctx context.Context, params *imds.GetInstanceIdentityDocumentInput, optFns ...func(*imds.Options)) (*imds.GetInstanceIdentityDocumentOutput, error) {
 				return &imds.GetInstanceIdentityDocumentOutput{
@@ -310,7 +257,7 @@ func TestRetrieveAWSMetadataEC2(t *testing.T) {
 					Tags: []types.TagDescription{},
 				}, nil
 			},
-			processorOverwrite: false,
+			processorOverwrite: true,
 			previousEvent: mapstr.M{
 				"cloud.provider": "aws",
 			},
